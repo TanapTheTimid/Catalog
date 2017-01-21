@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timid.catalog.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="8dp"
+        android:id="@+id/categories_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:background="#EEEEEE"/>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/categories_view"
+        app:layout_anchorGravity="bottom|right|end"
+         >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/camera_icon"
+            android:layout_marginStart="28dp"
+            android:layout_marginBottom="16dp"
+            app:fabSize="mini"
+            android:layout_marginLeft="28dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/new_category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/new_category"
+            app:fabSize="mini"
+            android:layout_marginStart="28dp"
+            android:layout_below="@id/camera_btn"
+            android:layout_marginLeft="28dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/plus_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/fab_icon"
+            app:fabSize="normal"
+            android:layout_margin="20dp"
+            android:layout_below="@id/new_category_btn"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

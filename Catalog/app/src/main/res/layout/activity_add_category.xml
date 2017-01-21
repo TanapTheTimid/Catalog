@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_category"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.timid.catalog.AddCategoryActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/new_cat_name"
+        android:hint="Category Name" />
+
+    <Button
+        android:text="Add"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/add_cat_btn" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/new_cat_desc"
+        android:hint="Category Description"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_below="@+id/new_cat_name"
+        android:layout_alignLeft="@+id/new_cat_name"
+        android:layout_alignStart="@+id/new_cat_name" />
+</RelativeLayout>
