@@ -1,3 +1,6 @@
+#THIS PROJECT IS NO LONGER BEING DEVELOPED
+#BASIC FUNCTIONALITY MAY OR MAY NOT WORK
+
 # Catalog
 Catalog - organize photos
 This software is still in ALPHA stage. It is functional though.
